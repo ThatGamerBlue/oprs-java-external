@@ -12,7 +12,7 @@ import net.runelite.client.plugins.PluginType;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example Plugin",
+	name = ExamplePlugin.PLUGIN_NAME,
 	description = "Example Java Plugin for OPRS",
 	tags = {"example", "plugin", "duhhhhh"},
 	type = PluginType.EXTERNAL
@@ -20,6 +20,7 @@ import net.runelite.client.plugins.PluginType;
 public class ExamplePlugin extends Plugin
 {
 	public static final String VERSION = "@version@";
+	public static final String PLUGIN_NAME = "@pluginname@";
 
 	@Inject
 	private Client client;
@@ -27,13 +28,13 @@ public class ExamplePlugin extends Plugin
 	@Override
 	public void startUp()
 	{
-		log.info("Example plugin v{} starting up", VERSION);
+		log.info("{} v{} starting up", PLUGIN_NAME, VERSION);
 	}
 
 	@Override
 	public void shutDown()
 	{
-		log.info("Example plugin shutting down");
+		log.info("{} shutting down", PLUGIN_NAME);
 	}
 
 	@Subscribe
