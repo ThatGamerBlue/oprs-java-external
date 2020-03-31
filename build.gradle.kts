@@ -51,7 +51,7 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:${Versions.lombok}")
     annotationProcessor("org.pf4j:pf4j:${Versions.pf4j}")
 
-    implementation("com.github.open-osrs.runelite:runelite-client:master-SNAPSHOT")
+    implementation("com.openosrs.runelite:runelite-client:master-SNAPSHOT")
 
     implementation("com.google.inject:guice:${Versions.guice}:no_aop")
     implementation("org.projectlombok:lombok:${Versions.lombok}")
